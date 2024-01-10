@@ -28,5 +28,5 @@ runs:
       shell: bash
 
     - run: |
-        /home/runner/go/bin/amass enum enum -d domain      
+        /home/runner/go/bin/amass enum enum -d ${{ inputs.domain }}     
       shell: bash
