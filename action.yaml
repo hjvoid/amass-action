@@ -28,5 +28,5 @@ runs:
       shell: bash
 
     - run: |
-        /home/runner/go/bin/amass enum enum -d owasp.org     
+        /home/runner/go/bin/amass enum enum -h     
       shell: bash
