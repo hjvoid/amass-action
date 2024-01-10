@@ -15,6 +15,9 @@ inputs:
     description: "Path to the INI configuration file."
     required: true     
 
+  domain:
+    description: "Domain to scan"
+    required: true
 
 runs:
   using: "composite"
@@ -25,5 +28,5 @@ runs:
       shell: bash
 
     - run: |
-        /home/runner/go/bin/amass enum -src -config=${{ inputs.config }} -o=${{ inputs.output }}      
+        /home/runner/go/bin/amass enum enum -d domain      
       shell: bash
