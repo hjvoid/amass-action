@@ -28,5 +28,5 @@ runs:
       shell: bash
 
     - run: |
-        amass enum -d owasp.org -o amass.txt -dns-qps 200
+        amass enum -timeout 2 -dns-qps 200 -d owasp.org -o amass.txt
       shell: bash
